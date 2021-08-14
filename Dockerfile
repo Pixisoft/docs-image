@@ -1,5 +1,7 @@
 FROM ubuntu:18.04
-RUN apt-get update && apt-get install -y
+RUN apt-get update && apt-get install -y \
+curly \
+
 RUN curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
 RUN python3.8 get-pip.py
 FROM squidfunk/mkdocs-material
