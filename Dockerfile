@@ -1,4 +1,5 @@
 FROM squidfunk/mkdocs-material
+RUN python3.8 get-pip.py
 RUN pip install --no-cache-dir \
         'mkdocs-awesome-pages-plugin>=2.2.1' \
         'mkdocs-git-revision-date-localized-plugin>=0.4' \
