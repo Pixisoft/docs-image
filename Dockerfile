@@ -3,7 +3,7 @@ FROM ubuntu
 RUN apt-get update && apt-get install -y \
     python-pip
 
-FROM melopt/mkdocs
+FROM squidfunk/mkdocs-material
 RUN pip install --no-cache-dir \
         'mkdocs-rtd-dropdown' \
         'mkdocs-awesome-pages-plugin>=2.2.1' \
