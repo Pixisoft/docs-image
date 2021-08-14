@@ -1,4 +1,5 @@
 FROM squidfunk/mkdocs-material
+RUN curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
 RUN python3.8 get-pip.py
 RUN pip install --no-cache-dir \
         'mkdocs-awesome-pages-plugin>=2.2.1' \
