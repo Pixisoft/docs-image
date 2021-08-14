@@ -1,7 +1,9 @@
 FROM ubuntu:18.04
+
 RUN apt-get update && apt-get install -y \
     python-pip
-FROM squidfunk/mkdocs-material
+
+FROM melopt/mkdocs
 RUN pip install --no-cache-dir \
         'mkdocs-awesome-pages-plugin>=2.2.1' \
         'mkdocs-git-revision-date-localized-plugin>=0.4' \
