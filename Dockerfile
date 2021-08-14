@@ -1,4 +1,4 @@
-FROM squidfunk/mkdocs-material:6.2.4
+FROM cjsheets/mkdocs-rtd-dropdown:1.0.2
 RUN pip install --no-cache-dir \
         'mkdocs-awesome-pages-plugin>=2.2.1' \
         'mkdocs-git-revision-date-localized-plugin>=0.4' \
