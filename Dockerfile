@@ -1,4 +1,4 @@
-FROM docker pull mgaroz/mkdocs
+FROM mgaroz/mkdocs
 RUN pip install --no-cache-dir \
         'mkdocs-rtd-dropdown' \
         'mkdocs-awesome-pages-plugin>=2.2.1' \
