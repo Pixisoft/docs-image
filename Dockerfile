@@ -1,6 +1,5 @@
-FROM polinux/mkdocs
+FROM squidfunk/mkdocs-material:6.2.4
 RUN pip install --no-cache-dir \
-        'mkdocs-rtd-dropdown' \
         'mkdocs-awesome-pages-plugin>=2.2.1' \
         'mkdocs-git-revision-date-localized-plugin>=0.4' \
         'mkdocs-minify-plugin>=0.3' \
